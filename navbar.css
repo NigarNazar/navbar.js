@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap');
+body{
+    font-family: 'Heebo', sans-serif;
+}
+ .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.logo h1{
+ text-transform: uppercase;
+color:#414345;
+ font-weight:700 ;
+ font-size: 36px;
+ cursor: default;
+
+}
+.nero{
+  display: flex;
+  text-align: center; 
+  flex-wrap: wrap;
+
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color:#fff;
+    padding:0 10px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    background:linear-gradient(#0F2027,#203A43,#2C5364) ;
+    border: 1px solid #203A43;
+    border-radius: 25px;
+    box-shadow: 2px 4px 5px rgba(0,0,0,40%);
+    
+    
+}
+.peper a::after{
+    content: "";
+position: absolute;
+background-color: #414345;
+height: 5px;
+width: 0;
+left: 0;
+bottom: -10px;
+transition: .5s ease-out;
+}
+.peper a:hover:after{
+    width: 100%;
+}
